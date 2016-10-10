@@ -70,14 +70,14 @@ class Slicer
   ##
   def write_dzi_specification
     properties = {
-      'Image': {
-        'xmlns':  "http://schemas.microsoft.com/deepzoom/2008",
-        'Format':  format,
-        'Overlap':  overlap.to_s,
-        'TileSize':  tile_size.to_s,
-        'Size': {
-          'Height': height.to_s,
-          'Width': width.to_s
+      'Image' => {
+        'xmlns' => "http://schemas.microsoft.com/deepzoom/2008",
+        'Format' => format,
+        'Overlap' => overlap.to_s,
+        'TileSize' => tile_size.to_s,
+        'Size' => {
+          'Height' => height.to_s,
+          'Width' => width.to_s
         }
       }
     }
